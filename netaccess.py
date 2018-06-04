@@ -20,7 +20,7 @@ res = s.get('https://netaccess.iitm.ac.in/account/approve')
 
 formdata = {
         'approveBtn' : True,
-        'duration' : 2
+        'duration' : 2            # duration = 2 is for 1 day. Change the duration to 1 if you want 60 minutes access.
     }
 r = s.post('https://netaccess.iitm.ac.in/account/approve', data=formdata)
 
